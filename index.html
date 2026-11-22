@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Fortune Tiles 1024</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header><div id="title">FORTUNE TILES · 1024 WAYS</div><button id="muteBtn">🔊</button></header>
+  <div id="mults"><span data-i="0">x1</span><span data-i="1">x2</span><span data-i="2">x3</span><span data-i="3">x5</span></div>
+  <div id="boardWrap"><div id="board"></div></div>
+  <div id="msg">WIN UP TO 1024 WAYS!</div>
+  <div id="bar">
+    <div class="box">SALDO<b id="bal">0</b></div>
+    <div class="box">TARUHAN<b id="betTxt">0</b></div>
+    <div class="box">MENANG<b id="winTxt">0.00</b></div>
+  </div>
+  <div id="ctrl">
+    <button id="auto" class="small">AUTO</button>
+    <button id="minus" class="small">−</button>
+    <button id="spin"><img src="assets/img/btn.svg" alt="spin"><span id="spinInfo"></span></button>
+    <button id="plus" class="small">+</button>
+    <button id="turbo" class="small">⚡</button>
+  </div>
+  <div id="bigwin" class="hidden"><div>BIG WIN</div><b id="bigAmt">0</b></div>
+  <div id="modal" class="hidden"><div class="card">
+    <h3>Auto Spin</h3><div id="opts"></div><button id="startAuto">Mulai</button><button id="closeAuto" class="x">✕</button>
+  </div></div>
+  <div id="start"><h1>Fortune Tiles</h1><p>Game demo · hanya kredit virtual</p><button id="go">MAIN</button></div>
+</div>
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
